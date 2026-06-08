@@ -1,0 +1,138 @@
+[
+    {
+        "name": "Bronze",
+        "type": "alloy",
+        "elements": [
+            { "name": "Copper", "min": 88, "max": 92 },
+            { "name": "Tin", "min": 8, "max": 12 }
+        ]
+    },
+    {
+        "name": "Black Bronze",
+        "type": "alloy",
+        "elements": [
+            { "name": "Copper", "min": 50, "max": 70 },
+            { "name": "Silver", "min": 10, "max": 25 },
+            { "name": "Gold", "min": 10, "max": 25 }
+        ]
+    },
+    {
+        "name": "Weak Steel",
+        "type": "alloy",
+        "elements": [
+            { "name": "Steel", "min": 50, "max": 70 },
+            { "name": "Nickel", "min": 15, "max": 25 },
+            { "name": "Black Bronze", "min": 15, "max": 25 }
+        ]
+    },
+    {
+        "name": "Black Steel",
+        "type": "composite",
+        "components": [
+            { "name": "Weak Steel", "ratio": 1 },
+            { "name": "Pig Iron", "ratio": 1 }
+        ]
+    },
+    {
+        "name": "Andesite Alloy",
+        "type": "alloy",
+        "recipes": [
+            {
+                "elements": [
+                    { "name": "Molten andesite stone", "min": 88, "max": 92 },
+                    { "name": "Tin", "min": 8, "max": 12 }
+                ]
+            },
+            {
+                "elements": [
+                    { "name": "Molten andesite stone", "min": 88, "max": 92 },
+                    { "name": "Zinc", "min": 8, "max": 12 }
+                ]
+            },
+            {
+                "elements": [
+                    { "name": "Molten andesite stone", "min": 88, "max": 92 },
+                    { "name": "Cast iron", "min": 8, "max": 12 }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Brass",
+        "type": "alloy",
+        "elements": [
+            { "name": "Copper", "min": 88, "max": 92 },
+            { "name": "Zinc", "min": 8, "max": 12 }
+        ]
+    },
+    {
+        "name": "Rose Gold",
+        "type": "alloy",
+        "elements": [
+            { "name": "Copper", "min": 15, "max": 30 },
+            { "name": "Gold", "min": 70, "max": 85 }
+        ]
+    },
+    {
+        "name": "Weak Red Steel",
+        "type": "alloy",
+        "elements": [
+            { "name": "Black Steel", "min": 50, "max": 55 },
+            { "name": "Steel", "min": 20, "max": 25 },
+            { "name": "Brass", "min": 10, "max": 15 },
+            { "name": "Rose Gold", "min": 10, "max": 15 }
+        ]
+    },
+    {
+        "name": "Weak Blue Steel",
+        "type": "alloy",
+        "elements": [
+            { "name": "Black Steel", "min": 50, "max": 55 },
+            { "name": "Steel", "min": 20, "max": 25 },
+            { "name": "Bismuth Bronze", "min": 10, "max": 15 },
+            { "name": "Sterling Silver", "min": 10, "max": 15 }
+        ]
+    },
+    {
+        "name": "Electrum",
+        "type": "alloy",
+        "elements": [
+            { "name": "Gold", "min": 40, "max": 60 },
+            { "name": "Silver", "min": 40, "max": 60 }
+        ]
+    },
+    {
+        "name": "Constantan",
+        "type": "alloy",
+        "elements": [
+            { "name": "Copper", "min": 40, "max": 60 },
+            { "name": "Nickel", "min": 40, "max": 60 }
+        ]
+    },
+    {
+        "name": "Stainless steel",
+        "type": "alloy",
+        "elements": [
+            { "name": "Chromium", "min": 20, "max": 30 },
+            { "name": "Nickel", "min": 10, "max": 20 },
+            { "name": "Steel", "min": 60, "max": 80 }
+        ]
+    },
+    {
+        "name": "Sterling Silver",
+        "type": "alloy",
+        "elements": [
+            { "name": "Copper", "min": 20, "max": 40 },
+            { "name": "Silver", "min": 60, "max": 80 }
+        ]
+    },
+    {
+        "name": "Bismuth Bronze",
+        "type": "alloy",
+        "elements": [
+            { "name": "Zinc", "min": 20, "max": 30 },
+            { "name": "Copper", "min": 50, "max": 65 },
+            { "name": "Bismuth", "min": 10, "max": 20 }
+        ]
+    }
+]

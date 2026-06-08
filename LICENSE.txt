@@ -1,0 +1,32 @@
+# LICENSE
+
+Copyright (c) 2026 Juanakin01 (App Creator)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, and/or sublicense copies of the Software, subject to the following conditions:
+
+## 1. Attribution Requirement
+
+Any distribution, modified version, or derivative work based on this Software must include clear and visible credit to the original author ("Juanakin01") and a working hyperlink to the official project repository (GitHub URL: https://github.com). This credit must appear in the user interface (if applicable), in the documentation, and in any related materials.
+
+## 2. Non-Trivial Changes Only
+
+You may not redistribute this Software with only trivial or minimal changes. Examples of trivial changes include, but are not limited to:
+- Changing only text strings, comments, or user interface labels
+- Fixing typos
+- Adjusting whitespace or formatting
+- Adding or removing a single line of code that does not affect core functionality
+
+Any redistribution must include meaningful modifications or additions that significantly change the Software's functionality, features, or performance.
+
+## 3. Disclaimer of Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## 4. No Endorsement
+
+Modified versions of this Software may not use the original author's name ("Juanakin01") to imply endorsement of the modified version without explicit written permission.
+
+---
+
+**GitHub Repository:** https://github.com
+**Original Author:** Juanakin01

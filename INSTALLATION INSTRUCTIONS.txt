@@ -1,0 +1,63 @@
+INSTALLATION INSTRUCTIONS
+========================================
+
+STEP 1: Install Python
+----------------------
+
+This app needs Python to run. A new computer usually doesn't have it installed.
+
+Download Python:
+- Go to: https://www.python.org/downloads/
+- Click the yellow "Download Python" button (it will detect your operating system automatically)
+
+During installation (VERY IMPORTANT):
+- ✅ CHECK the box that says "Add Python to PATH"
+- Then click "Install Now"
+
+(OPTIONAL)Verify installation:
+- Open Command Prompt(Windows) or Terminal (Mac/Linux)
+- Type: python --version
+- You should see something like: Python 3.10 or higher.
+
+
+STEP 2: Get the app files
+-------------------------
+
+You need two files:
+- TerrafirmaCraftHelper.py (the main script)
+- alloys.json (the recipes database)
+
+Save both files in the SAME folder (for example, create a folder called "TerrafirmaCraftHelper")
+
+
+STEP 3: Run the app
+-------------------
+
+Method 1 - Double click:
+- Simply double-click the TerrafirmaCraftHelper.py file
+- If this doesn't work, right-click the file, select "Open with", and choose Python (or Python Launcher)
+
+Method 2 - Using terminal (recommended if double-click doesn't work):
+1. Open Command Prompt / Terminal
+2. Navigate to the folder where you saved the files
+3. Run the app:
+   python TerrafirmaCraftHelper.py 
+   (or "py TerrafirmaCraftHelper.py " on Windows)
+
+
+TROUBLESHOOTING
+---------------
+
+Problem: 'python' is not recognized
+Solution: Python wasn't added to PATH. Reinstall and check "Add Python to PATH"
+
+Problem: File opens and closes immediately
+Solution: Open terminal and run manually (Method 2 above)
+
+Problem: FileNotFoundError: alloys.json
+Solution: Make sure alloys.json is in the SAME folder as alloys.py
+
+
+NEED MORE HELP?
+---------------
+Search online: "How to install Python on Windows" or "How to install Python on Mac"

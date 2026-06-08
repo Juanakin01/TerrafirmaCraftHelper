@@ -1,0 +1,168 @@
+================================================================================
+TerrafirmaCraftHelper - USER MANUAL
+================================================================================
+
+TABLE OF CONTENTS
+1. Overview
+2. Navigation Basics
+3. Anvil Helper
+4. Alloy Helper
+5. Troubleshooting
+6. File Structure
+7. Shortcuts Summary
+8. Tips
+
+================================================================================
+1. OVERVIEW
+================================================================================
+
+This tool provides two main features:
+- Anvil Helper: Calculates the optimal sequence of hammer hits to create an item.(You'll need to understand how the resourcepack "TFC_TNC-AnvilGUI" works)
+- Alloy Helper: Calculates required base materials for crafting alloys, splits into crucibles, and decomposes sub-alloys.
+
+================================================================================
+2. NAVIGATION BASICS
+================================================================================
+
+Command     | Action
+M (or m)    | Return to main menu from any input prompt
+Ctrl+C      | Exit program immediately
+Enter       | Continue after viewing results
+
+================================================================================
+3. ANVIL HELPER
+================================================================================
+
+Purpose: Find the minimum number of hammer hits needed to create an item.
+
+Available Moves:
++2   = Increase by 2
++7   = Increase by 7
++13  = Increase by 13
++16  = Increase by 16
+-3   = Decrease by 3
+-6   = Decrease by 6
+-9   = Decrease by 9
+-15  = Decrease by 15
+
+How to Use:
+1. Select option 1 from main menu
+2. Enter start value (0-150)
+3. Enter target value (0-150)
+4. Enter three mandatory last moves (in order):
+   - +16 or -3 → specific move
+   - H → any hit (any of: -3, -6, -9)
+   - N → any move (any of the 8 moves)/(For when the object only asks you for two specific actions instead of three.) 
+
+Example:
+Start (0-150): 50
+Target (0-150): 100
+Move 1 (antepenultimate): N
+Move 2 (penultimate): H
+Move 3 (last): +16
+
+Result:
+SOLUTION
+Start 50 -> Target 100
+Total moves: 5
+Prefix moves: 2 hits to +13, 1 hit to +2
+Mandatory last moves: 1 hit to +13, 1 hit to -3, 1 hit to +16
+
+================================================================================
+4. ALLOY HELPER
+================================================================================
+
+Purpose: Calculate exact amounts of base materials needed to craft a specific alloy.
+
+Input Formats:
+- X i  = X ingots (1 ingot = 100 mb)  Example: 5 i = 500 mb
+- X mb = X millibuckets              Example: 450 mb = 4.5 ingots
+- X    = X ingots (default)          Example: 20 = 20 ingots = 2000 mb
+
+How to Use:
+1. Select option 2 from main menu
+2. Select alloy from paginated list:
+   - Type number → select directly
+   - Type name fragment → search(Example: Type `"Br"` and the list will filter to show only alloys containing that word (Bronze, Black Bronze, Brass, Bismuth Bronze).
+   - n → next page
+   - p → previous page
+   - b → back to full list (when searching)
+   - q → cancel selection
+3. Enter amount (e.g., 10 i, 450 mb, 20)
+4. Enter percentages for each element (must sum to 100%)
+5. Optional: Split into crucibles if >3000 mb (30 ingots)
+6. Optional: Decompose sub-alloys into their base materials
+
+Example:
+Select alloy: 1 (Bronze)
+Amount: 10 i
+% of Copper (88-92%): 90
+% of Tin (8-12%): 10
+
+RESULTS:
+Total alloy: 10 i = 1000 mb
+You need to add:
+  Copper: 900.00 mb (9 i) (90%)
+  Tin: 100.00 mb (1 i) (10%)
+
+================================================================================
+5. TROUBLESHOOTING
+================================================================================
+
+Problem                                    Solution
+"Value must be between X and Y"            Enter number within shown range
+"Total exceeds 100%"                       Restart percentages, sum must = 100%
+No solution found (Anvil)                  Try different mandatory moves
+"Invalid amount format"                    Use: 10 i, 450 mb, or 20
+Alloy not in list                          Check alloys.json file
+Can't select alloy                         Use number from current page or search by name
+
+================================================================================
+6. FILE STRUCTURE
+================================================================================
+
+program_directory/
+├── Main.py              # Main program file
+└── alloys.json          # Alloy database (auto-created if missing)
+
+alloys.json format example:
+[
+  {
+    "name": "Bronze",
+    "type": "alloy",
+    "elements": [
+      {"name": "Copper", "min": 88, "max": 92},
+      {"name": "Tin", "min": 8, "max": 12}
+    ]
+  }
+]
+
+================================================================================
+7. SHORTCUTS SUMMARY
+================================================================================
+
+Key       | Where                      | Action
+M         | Any input                  | Return to main menu
+Ctrl+C    | Anywhere                   | Exit program
+n         | Alloy selection            | Next page
+p         | Alloy selection            | Previous page
+b         | Alloy selection (search)   | Back to full list
+q         | Alloy selection            | Cancel selection
+H         | Mandatory moves (Anvil)    | Any hit (-3,-6,-9)
+N         | Mandatory moves (Anvil)    | Any move (all 8 options)
+y/yes     | Yes/no prompts             | Affirmative
+n/no      | Yes/no prompts             | Negative
+
+================================================================================
+8. TIPS
+================================================================================
+
+1. Always use M instead of restarting the program to go back
+2. Search for alloys by typing partial names (case-insensitive)
+3. Split large batches when prompted to avoid overfilling crucibles
+4. Decompose sub-alloys to see exact base material requirements
+5. The program saves data in alloys.json - edit manually to add custom alloys
+
+================================================================================
+For additional help, check the source code comments or contact the developer.
+================================================================================
