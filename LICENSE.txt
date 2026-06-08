@@ -6,7 +6,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ## 1. Attribution Requirement
 
-Any distribution, modified version, or derivative work based on this Software must include clear and visible credit to the original author ("Juanakin01") and a working hyperlink to the official project repository (GitHub URL: https://github.com). This credit must appear in the user interface (if applicable), in the documentation, and in any related materials.
+Any distribution, modified version, or derivative work based on this Software must include clear and visible credit to the original author ("Juanakin01") and a working hyperlink to the official project repository (GitHub URL: https://github.com/Juanakin01/TerrafirmaCraftHelper). This credit must appear in the user interface (if applicable), in the documentation, and in any related materials.
 
 ## 2. Non-Trivial Changes Only
 
@@ -28,5 +28,5 @@ Modified versions of this Software may not use the original author's name ("Juan
 
 ---
 
-**GitHub Repository:** https://github.com
-**Original Author:** Juanakin01
+GitHub Repository: https://github.com/Juanakin01/TerrafirmaCraftHelper
+Original Author: Juanakin01
